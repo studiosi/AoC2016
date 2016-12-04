@@ -1,5 +1,3 @@
-import string
-
 def dec(n):
     chsum = n.split("[")[1].replace("]", "").strip()
     r = n.split("-")
