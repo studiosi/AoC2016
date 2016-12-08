@@ -8,7 +8,10 @@ scr = [ [ 0 for x in xrange(MX) ] for y in xrange(MY) ]
 def prscr(scr):
     for l in scr:
         for e in l:
-            sys.stdout.write(str(e))
+            if e == 1:
+                sys.stdout.write(str(e))
+            else:
+                sys.stdout.write(" ")
         sys.stdout.write('\n')
 
 def sets(scr, x, y):
@@ -74,7 +77,7 @@ for line in lines:
     elif l[0] == "rect":
         s = l[1].split("x")
         rect(scr, int(s[0]), int(s[1]))
-y = coun(scr)
-print y
+
+prscr(scr)
 
 fIn.close()
