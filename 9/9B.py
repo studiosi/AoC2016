@@ -1,8 +1,4 @@
-#fIn = open("input.txt", "r")
-#j = "".join(fIn.readlines())
-
 j = open('input.txt').read().strip()
-
 
 r = 0
 
@@ -21,8 +17,7 @@ def css(s):
     return r
 
 print css(j)
-
-#fIn.close()        
+     
             
     
     
